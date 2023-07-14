@@ -3,53 +3,30 @@
 MacuHealth is the only nutritional vision supplement containing all three macular carotenoids. This project is dashboard to show MacuHealth data using Tableau.
 
 ## Example Data
+| City | Doctor | ExAM TYPE | Metric Selection - Clinical Products - Prefix | Metric Selection - Clinical Products - Sufix | Performer Type | State | Store | Brand | Company Category | Current Period-Filter | Arrived Date | Cities | Last Update | Prescribed and Sold (Units) - MacuHealth | PrescribedMacuHealth | UnitsMacuHealth |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fortaleza | Dra. Camila Nascimento | Contact Lens Exam | $ | Remote | Ceará | 53 - Dixie Iris | Eye You Care | Corporate | TRUE | 3/27/2023 15:57 | Fortaleza - Ceará | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Paraná | 159 - Urera | Eye You Care | Corporate | TRUE | 3/27/2023 11:32 | Cascavel - Paraná | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Ceará | 17 - Kohlmeyera Lichen | Eye You Care | Corporate | TRUE | 3/27/2023 9:40 | Fortaleza - Ceará | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Pernambuco | 62 - Ebony Coccuswood | Eye You Care | Corporate | TRUE | 3/27/2023 10:53 | Recife - Pernambuco | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Espírito Santo | 212 - Wailupe Valley Treecotton | Eye You Care | Corporate | TRUE | 3/28/2023 16:22 | Vitória - Espírito Santo | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Rio de Janeiro | 1 - Munz's Hedgehog Cactus | Eye You Care | Corporate | TRUE | 3/27/2023 14:00 | Rio de Janeiro - Rio de Janeiro | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Santa Catarina | 94 - Texas False Agave | Eye You Care | Corporate | TRUE | 3/28/2023 9:15 | Joinville - Santa Catarina | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Paraná | 12 - Slender Pinepink | Eye You Care | Corporate | TRUE | 3/27/2023 10:01 | Londrina - Paraná | 28 March, 2023 | 0 | 0 | 0 |
+| Remote | Distrito Federal | 259 - Geyer's Onion | Eye You Care | Corporate | TRUE | 3/26/2023 14:41 | Brasília - Distrito Federal | 28 March, 2023 | 0 | 0 | 0 |
+| Onsite | Ceará | 91 - Micrandra | Eye You Care | Corporate | TRUE | 3/27/2023 15:53 | Fortaleza - Ceará | 28 March, 2023 | 0 | 0 | 0 |
+| Onsite | Distrito Federal | 259 - Geyer's Onion | Eye You Care | Corporate | TRUE | 3/27/2023 10:59 | Brasília - Distrito Federal | 28 March, 2023 | 0 | 0 | 0 |
+| Onsite | Ceará | 91 - Micrandra | Eye You Care | Corporate | TRUE | 3/28/2023 9:53 | Fortaleza - Ceará | 28 March, 2023 | 0 | 0 | 0 |
 
 
-
-## Features
-
-### Workflow:
-1)	User signs in with wallet
-2)	Marketplace reads wallet and detects Estates NFTs present (not sure of best way to do this, will need to be able to look at staked NFTs also. Could get the same wallet connection from the Front-end Dev which does this already on the inventory page on https://app.theestates.io/#/inventory)
-3)	User selects items from the store they wish to purchase for $EQUITY
-4)	User selects which NFT they will be purchasing on
-5)	Transaction is created, when approved $EQUITY is debited/burned and next steps occur
-6)	Shopping Mall Database (SMD) with list of NFTs and items that belong to each NFT is updated to reflect purchase and a log of the transaction is created
-7)	Access to download purchased items is granted immediately to NFT (not the wallet) through a permission to our S3 database (can be achieved through a smart item numbering system)
-8)	User can download items from The Shopping Mall/Blueprints site. 
-
-
-## Screenshots
+## Main Analysis
 <p align="center">
-    <h3>Landing Page</h3>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Landing%20page_1.png"/>
-    This is really great as these items change all the time
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Landing%20page_2.png"/>
-</p>
-<p align="center">
-    <h3>Item Page</h3>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_1.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_2.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_3.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_4.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_5.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_page_6.png"/>
-</p>
-<p align="center">
-    <h3>Item Colouring</h3>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_colouring_1.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_colouring_2.png"/>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_colouring_3.png"/>
-</p>
-<p align="center">
-    <h3>Item Ownership Page</h3>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_Ownership_Page_1.png"/>
-</p>
-<p align="center">
-    <h3>Item Parameters</h3>
-    <img src="https://github.com/LoveNuna/Estates-codebase/blob/main/front-end/images/Item_Parameters.png"/>
+    <h3>Main Analysis</h3>
+    <img src="https://github.com/LoveNui/MacuHealth-tableau-analysis/blob/main/Pictures/Main%20Analysis.JPG"/>
 </p>
 
-## Support and Feedback
-
-Feel free to create an issue to discuss more.
+## Regional Analysis
+<p align="center">
+    <h3>Regional Analysis</h3>
+    <img src="https://github.com/LoveNui/MacuHealth-tableau-analysis/blob/main/Pictures/Regional%20Analysis.JPG"/>
+</p>
